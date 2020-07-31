@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="185371" started-at="2020-07-31T22:40:52 IST" finished-at="2020-07-31T22:43:58 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="185371" started-at="2020-07-31T22:40:52 IST" finished-at="2020-07-31T22:43:58 IST">
+      <class name="com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCEcommerce">
+        <test-method status="PASS" signature="killprocess()[pri:0, instance:com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCEcommerce@462d5aee]" name="killprocess" is-config="true" duration-ms="3025" started-at="2020-07-31T22:40:52 IST" finished-at="2020-07-31T22:40:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killprocess -->
+        <test-method status="PASS" signature="TC001()[pri:0, instance:com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCEcommerce@462d5aee]" name="TC001" duration-ms="76980" started-at="2020-07-31T22:40:56 IST" finished-at="2020-07-31T22:42:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+      </class> <!-- com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCEcommerce -->
+      <class name="com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCYouTube">
+        <test-method status="FAIL" signature="TC002(java.lang.String)[pri:0, instance:com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCYouTube@69b0fd6f]" name="TC002" duration-ms="51492" started-at="2020-07-31T22:42:13 IST" data-provider="YouTubeVideoSearch" finished-at="2020-07-31T22:43:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UST India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='ust global trivandrum']})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='ust global trivandrum']})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+at com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCYouTube.TC002(MainTCYouTube.java:31)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@555cf22 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='ust global trivandrum']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SARAVANANR', ip: '192.168.89.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method status="PASS" signature="TC002(java.lang.String)[pri:0, instance:com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCYouTube@69b0fd6f]" name="TC002" duration-ms="53707" started-at="2020-07-31T22:43:04 IST" data-provider="YouTubeVideoSearch" finished-at="2020-07-31T22:43:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UST Global]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+      </class> <!-- com.youtube.org.E2E_FRAMEWORK_YOUTUBE.MainTCYouTube -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
